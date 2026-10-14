@@ -353,6 +353,19 @@ The results represent an experimental comparison and do not demonstrate that eit
 
 ---
 
+## Evaluation of the Final Project (Unit 11) Against the Unit 6 Project Stage
+
+The Unit 11 individual project demonstrated the development of my machine-learning knowledge beyond the earlier Unit 6 project activities. Unit 6 focused on Airbnb price prediction and supply segmentation, comparing regression models and K-Means clustering. In contrast, Unit 11 addressed pneumonia detection using chest X-ray images, comparing HOG–SVM and a custom CNN.
+
+The final project involved greater technical risk because classification errors could have implications for patient safety. HOG–SVM achieved 94.51% accuracy compared with 91.93% for CNN, demonstrating that greater model complexity does not guarantee superior performance.
+
+The project also incorporated independent holdout testing and Grad-CAM visualisations, strengthening my understanding of validation and explainability.
+
+Overall, the progression from Unit 6 to Unit 11 improved my ability to select appropriate algorithms, evaluate uncertainty, interpret model limitations and communicate results responsibly. It also highlighted the importance of considering practical consequences alongside predictive accuracy.
+
+---
+
+
 # 8. Unit 11 – Model Performance Measurement
 
 The model-performance exercise explored how changing regularisation parameters affects classification and regression results.
@@ -368,6 +381,7 @@ This reinforced the importance of evaluating hyperparameter choices empirically 
 *Figure 19. Unit 11 model-performance measurement results.*
 
 ---
+
 
 # 9. Collaborative Discussions
 
