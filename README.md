@@ -179,7 +179,7 @@ Sometimes Grad-CAM highlighted peripheral regions. Attention visualizations sugg
 
 *Figure 21. CNN explanations.*
 
-**Progression from Unit 6:** Airbnb Price Prediction and Business Segmentation Pneumonia Clinical Sensitivity, Error Analysis and Explainability This comparison therefore aims to focus on the development of my modeling and evaluation skills as Unit 6 was a separate Airbnb group project and not the initial proposal of the individual pneumonia investigation.
+**Progression from Unit 6:** The group project, Airbnb, was focused on price prediction, clustering and business interpretation, while the individual project, pneumonia, was focused on classification, sensitivity and patient safety. The first proposal for the investigation into pneumonia was not included in Unit 6. This comparison demonstrates the progression of my modeling and evaluation skills.
 
 
 ## Unit 11: Performance Measurement
@@ -275,7 +275,7 @@ The tutor’s comment was that I could have given a better business interpretati
 
 That feedback made me think again about my contribution. Reviewing a finished report can be useful but intervening earlier could have sorted scope, interpretation or consistency issues before they became part of the final draft. So I see teamwork as an iterative analytical responsibility, not just assembling finished sections.
 
-The pneumonia project was very surprising to me, because I expected deep learning to outperform classical approaches. HOG-SVM is simpler in design but CNN gave better accuracy and sensitivity. The most significant ones were false negatives 41 and 75 for SVM and CNN, respectively. Delayed work up in health care can lead to missed pneumonia diagnosis. The learning should be sensitive to error consequences that were important in the application, not just accuracy.
+The pneumonia project was very surprising to me, because I expected deep learning to outperform classical approaches. HOG-SVM is simpler in design with CNN but HOG-SVM gave better accuracy and sensitivity. The most significant ones were false negatives 41 and 75 for SVM and CNN, respectively. Delayed work up in health care can lead to missed pneumonia diagnosis. The learning should be sensitive to error consequences that were important in the application, not just accuracy.
 
 I started to mistrust hard evaluation. Leakage Mitigation Holdout and subject grouping derived from filenames were implemented to limit leakage in the project, but these identifiers were not confirmed patient records. Demographic information was not available, so fairness assessment was not meaningful. Thus the holdout performance does not reflect clinical generalizability and equity. Such limits are better stated openly than buried in good results.
 
