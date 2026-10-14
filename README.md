@@ -9,7 +9,7 @@
 ## Introduction and Learning Outcomes
 
 
-This e-Portfolio demonstrates my learning in the Machine Learning module Units 1-12 via practical activities, collaborative discussions and assessed projects. It shows my development in technical evaluation, critical reflection, ethical awareness and virtual team work.
+This e-Portfolio demonstrates my learning in the Machine Learning module Units 1-12 via practical activities, collaborative discussions and assessed projects. It shows my development in technical evaluation, critical reflection, ethical awareness and virtual teamwork.
 
 
 ### Learning Outcomes and Supporting Evidence
@@ -31,7 +31,7 @@ Unit 1 covered supervised and unsupervised methods and the machine-learning life
 
 *Figure 1. Auto-MPG correlation evidence.*
 
-Unit 3 Correlation Linear and polynomial regression Modeling assumptions Overfitting Unit 4 covered fuel consumption and population-GDP relationships (2001-2021) Association alone cannot be used to establish causation or predictive usefulness.
+Unit 3 : Correlation Linear and Polynomial Regression Modeling assumptions: Overfitting Unit 4 covered fuel consumption and population-GDP relationships (2001-2021). Association alone cannot be used to establish causation or predictive usefulness.
 
 
 ![Regression Results](assets/Correlation%20and%20Regression%20Results.jpg)
@@ -98,7 +98,7 @@ I finished my part and read through the whole group report for coherence and pre
 
 ## Units 7–8: Neural Networks and Optimisation
 
-Perceptron exercises with weighted inputs, bias, and AND classification. Gradient descent showed sensitivity to parameters. 100 iterations with 0.08 gave cost 0.004121 while 0.10 diverges to about 5.97 × 1028. Cost reduction with iterations (0.01) from **0.480407** (100) to **0.031985** (500). MovieLens outputted **RMSE 1.0400** and **MAE 0.8358**.
+Perceptron exercises with weighted inputs, bias, and classification. Gradient descent showed sensitivity to parameters. 100 iterations with 0.08 gave cost 0.004121 while 0.10 diverges to about 5.97 × 1028. Cost reduction with iterations (0.01) from **0.480407** (100) to **0.031985** (500). MovieLens outputted **RMSE 1.0400** and **MAE 0.8358**.
 
 
 ![Perceptron](assets/Perceptron%20Outputs.png)
@@ -155,7 +155,7 @@ Correct classification of an external car image was **99.59%** and a teacup was 
 
 ## Unit 11: Individual Pneumonia Investigation
 
-I compared a custom CNN to HOG–Linear SVM (Cortes and Vapnik, 1995) on chest X-rays (Mooney, 2018). Development used five group-aware folds and an independent **hold out set of 1,165 images**. Subject grouping was determined from filenames, not verified patient identifiers.
+I compared a custom CNN to HOG–Linear SVM (Cortes and Vapnik, 1995) on chest X-rays (Mooney, 2018). Development used five group-aware folds and an independent **holdout set of 1,165 images**. Subject grouping was determined from filenames, not verified patient identifiers.
 
 
 | Metric | HOG–SVM | CNN |
@@ -242,7 +242,7 @@ The second Discussion surveyed writing and authorship, verification and accounta
 
 ## Unit 12 and Professional Development
 
-Unit 12: Self Supervised Learning, Neural Architecture Search, Edge AI and Sustainability. These approaches involve significant computational, privacy and environmental trade-offs that need to be carefully governed. I will work to improve reproducibility, external validation, communication with interested parties, and ethical evaluation.
+Unit 12: Self-Supervised Learning, Neural Architecture Search, Edge AI and Sustainability. These approaches involve significant computational, privacy and environmental trade-offs that need to be carefully governed. I will work to improve reproducibility, external validation, communication with interested parties, and ethical evaluation.
 
 
 ![Unit 12](assets/Unit%2012%20Evidence.png)
@@ -257,7 +257,7 @@ This reflection uses the **What? So What? Now What?** model (Rolfe, Freshwater a
 
 ## WHAT? Learning Experiences
 
-Before taking this module I thought successful machine learning was mainly about picking an algorithm and reporting the highest accuracy. In twelve units, I found data suitability and reproducibility, assumptions, error analysis, communication and ethical consequences are all equally important. Practical exercises challenged me to link abstract concepts to observable behavior, instead of accepting results unquestioningly.
+Before taking this module, I thought successful machine learning was mainly about picking an algorithm and reporting the highest accuracy. In twelve units, I found data suitability and reproducibility, assumptions, error analysis, communication and ethical consequences are all equally important. Practical exercises challenged me to link abstract concepts to observable behavior, instead of accepting results unquestioningly.
 
 In previous exercises I thought that a completed notebook and a believable number were proof of success. The later units were whether the splits were defensible, whether the metrics matched the intent, and whether there was an explanation to support the conclusion.
 
@@ -269,23 +269,23 @@ The two assessments were different challenges. The Airbnb group project was appl
 
 ## SO WHAT? Critical Evaluation
 
-The Airbnb project exposed the inadequacy of aggregate metrics. The tuned XGBoost gave the best overall R2 but the errors were price dependent. Expensive properties are systematically underpriced and cheap properties are systematically overpriced . Thus, a model with good performance on average can be misleading for specific host groups. I learned that headline performance is not enough, but error analysis by price band and clear deployment boundaries also count.
+The Airbnb project exposed the inadequacy of aggregate metrics. The tuned XGBoost gave the best overall R² but the errors were price dependent. Expensive properties are systematically underpriced and cheap properties are systematically overpriced . Thus, a model with good performance on average can be misleading for specific host groups. I learned that headline performance is not enough, but error analysis by price band and clear deployment boundaries also count.
 
 The tutor’s comment was that I could have given a better business interpretation and rationale for recommendations and it made me think if I am too focused on technical competence. I did my share and read the whole report for coherence and presentation. It taught me how easy it is to get disjointed pieces that were written separately. I was at a 29/35 for my peer self-evaluation. I participated but I feel like there were some things I could have done better to help coordinate Going forward I will agree expectations early, plan for checkpoints to review and ensure recommendations are evidence based.
 
-That feedback made me think again about my contribution. Reviewing a finished report can be useful but intervening earlier could have sorted scope, interpretation or consistency issues before they became part of the final draft. So I see teamwork as an iterative analytical responsibility, not just assembling finished sections.
+That feedback made me think again about my contribution. Reviewing a finished report can be useful but intervening earlier could have sorted scope, interpretation or consistency issues before they became part of the final draft. So, I see teamwork as an iterative analytical responsibility, not just assembling finished sections.
 
-The pneumonia project was very surprising to me, because I expected deep learning to outperform classical approaches. HOG-SVM is simpler in design with CNN but HOG-SVM gave better accuracy and sensitivity. The most significant ones were false negatives 41 and 75 for SVM and CNN, respectively. Delayed work up in health care can lead to missed pneumonia diagnosis. The learning should be sensitive to error consequences that were important in the application, not just accuracy.
+The pneumonia project was very surprising to me, because I expected deep learning to outperform classical approaches. HOG-SVM is simpler in design with CNN but HOG-SVM gave better accuracy and sensitivity. The most significant ones were false negatives 41 and 75 for SVM and CNN, respectively. Delayed workup in health care can lead to missed pneumonia diagnosis. The learning should be sensitive to error consequences that were important in the application, not just accuracy.
 
-I started to mistrust hard evaluation. Leakage Mitigation Holdout and subject grouping derived from filenames were implemented to limit leakage in the project, but these identifiers were not confirmed patient records. Demographic information was not available, so fairness assessment was not meaningful. Thus the holdout performance does not reflect clinical generalizability and equity. Such limits are better stated openly than buried in good results.
+I started to mistrust hard evaluation. Leakage Mitigation Holdout and subject grouping derived from filenames were implemented to limit leakage in the project, but these identifiers were not confirmed patient records. Demographic information was not available, so fairness assessment was not meaningful. Thus, the holdout performance does not reflect clinical generalizability and equity. Such limits are better stated openly than buried in good results.
 
 Grad-CAM made it harder for me to understand CNN predictions. Some activations were observed outside of lung fields, indicating possible shortcut learning. But an attention map is not proof of causality. Now I see explanations as evidence to support that needs to be tested and not as proof of the right model reasoning [Selvaraju et al., 2017].
 
-The modeling went beyond the modeling through collaborative discussions. With the introduction of Industry 4.0/5.0, critical services relying on digital systems pose resilience and control issues. Tensions between productivity, originality and responsibility emerged in the debate on AI-writing. Research suggests the advantages of individual writing, but a possible decline in collective diversity (Noy and Zhang, 2023; Doshi and Hauser, 2024). Being professional means checking your outputs, being clear about what they can and can't do and being responsible.
+The modeling went beyond the modeling through collaborative discussions. With the introduction of Industry 4.0/5.0, critical services relying on digital systems pose resilience and control issues. Tensions between productivity, originality and responsibility emerged in the debate on AI-writing. Research suggests the advantages of individual writing but a possible decline in collective diversity (Noy and Zhang, 2023; Doshi and Hauser, 2024). Being professional means checking your outputs, being clear about what they can and can't do and being responsible.
 
 ## NOW WHAT? Development Actions
 
-My short-term goal is to have reproducible experiments. I will document the origins of the dataset, the data cleaning process, the data splits, the random seeds, the baselines, and the hyperparameters. I will keep independent evaluation data as much as possible, and not tune against final test set multiple times. The regularization exercise was a reminder of why evidence is needed for parameter choices.
+My short-term goal is to have reproducible experiments. I will document the origins of the dataset, the data cleaning process, the data splits, the random seeds, the baselines, and the hyperparameters. I will keep independent evaluation data as much as possible, and not tune against the final test set multiple times. The regularization exercise was a reminder of why evidence is needed for parameter choices.
 
 I will maintain an experiment log for my next project and review it before reporting results to measure improvement. I will create success criteria ahead of time, with at least one baseline, and will document the results. These actions should improve the auditability of reports.
 
