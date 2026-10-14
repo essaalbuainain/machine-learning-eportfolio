@@ -272,13 +272,15 @@ The main learning outcome was that efficiency must be balanced against resilienc
 
 
 
+
 ### Peer Interaction Evidence
 
 The following screenshot demonstrates my engagement with peers through constructive discussion and critical responses.
 
-![Discussion 1 Peer Reply](assets/Discussion1-Peer-Reply.png)
+![Discussion 1 Peer Reply](assets/Discussion1-Peer-Reply.jpeg)
 
-*Figure 22. My response to a peer in Collaborative Discussion 1.*
+*My response to a peer in Collaborative Discussion 1.*
+
 
 
 ## Discussion 2 – AI Writers
@@ -297,13 +299,14 @@ I recognised that fluent AI-generated writing is not necessarily accurate and re
 
 
 
+
 ### Peer Interaction Evidence
 
-The following screenshot provides evidence of my response to a peer during the discussion of AI-assisted writing and professional responsibility.
+The following screenshot demonstrates my engagement with peers in the discussion of AI-assisted writing and professional responsibility.
 
-![Discussion 2 Peer Reply](assets/Discussion2-Peer-Reply.png)
+![Discussion 2 Peer Reply](assets/Discussion2-Peer-Reply.jpeg)
 
-*Figure 25. My response to a peer in Collaborative Discussion 2.*
+*My response to a peer in Collaborative Discussion 2.*
 
 
 
