@@ -1,130 +1,75 @@
 
 # Machine Learning – ML_PCOM7E e-Portfolio
 
-**Student Name:** Essa Albuainain  
+**Student:** Essa Albuainain  
 **Institution:** University of Essex Online  
 **Module:** Machine Learning (ML_PCOM7E)  
-**Assessment:** Individual e-Portfolio  
 **Portfolio:** https://essaalbuainain.github.io/machine-learning-eportfolio/
-
----
 
 ## Introduction and Learning Outcomes
 
-This e-Portfolio documents my learning across Units 1–12 through practical exercises, collaborative discussions, tutor feedback, group and individual assessments, and critical reflection.
+This portfolio documents learning across Units 1–12, covering data suitability, modelling, evaluation, ethics and virtual collaboration. Evidence includes notebooks, discussions, group feedback and individual assessment. I progressed from reporting scores to questioning reliability and consequences.
 
-It addresses ethical and professional responsibility, dataset suitability, application and evaluation of machine-learning methods, and effective virtual teamwork.
+## Units 1–4: Foundations, EDA and Regression
 
-My development progressed from exploratory analysis and regression to clustering, neural networks, model evaluation, explainability and responsible AI.
+Unit 1 introduced supervised and unsupervised methods and the machine-learning lifecycle. Unit 2 Auto-MPG exploration identified six missing horsepower values and negative associations between fuel economy and vehicle weight, displacement and cylinders. Missingness and correlation required investigation before modelling.
 
----
+![Auto-MPG Heatmap](assets/Auto-MPG%20Correlation%20Heatmap.jpeg)
 
-# 1. Foundations – Units 1–3
+*Figure 1. Auto-MPG correlation evidence.*
 
-## Unit 1 – Machine Learning Principles
+Unit 3 compared correlation, linear and polynomial regression, highlighting modelling assumptions and overfitting. Unit 4 examined fuel consumption and population–GDP relationships (2001–2021); association alone could not establish causality or predictive usefulness.
 
-Unit 1 introduced supervised and unsupervised learning, algorithm selection and the machine-learning lifecycle. I learned that reliable modelling begins with defining the problem and understanding available data.
+![Regression Results](assets/Correlation%20and%20Regression%20Results.jpg)
 
-## Unit 2 – Exploratory Data Analysis
+*Figure 2. Correlation and regression.*
 
-The Auto-MPG activity identified six missing horsepower values and negative correlations between MPG and vehicle weight, displacement and cylinders.
+![Population GDP](assets/Population%E2%80%93GDP%20Regression.png)
 
-This demonstrated the importance of investigating missing data and feature relationships before modelling. Correlation does not establish causation.
+*Figure 3. Population–GDP exercise.*
 
-![Auto-MPG Correlation Heatmap](assets/Auto-MPG%20Correlation%20Heatmap.jpeg)
+## Units 5–6: Similarity and Clustering
 
-*Figure 1. Auto-MPG correlation analysis.*
+Jaccard distances were Jack–Mary **0.7273**, Jack–Jim **0.4444**, and Jim–Mary **0.9231**; attribute representation determines similarity.
 
-## Unit 3 – Correlation and Regression
-
-I investigated covariance, Pearson correlation, linear regression and polynomial regression. These methods demonstrated how assumptions and model complexity influence fitted relationships and overfitting risk.
-
-![Correlation and Regression Results](assets/Correlation%20and%20Regression%20Results.jpg)
-
-*Figure 2. Correlation and regression results.*
-
----
-
-# 2. Applied Regression – Unit 4
-
-The exercises investigated fuel-consumption relationships and population–GDP indicators from 2001 to 2021.
-
-The regression illustrated that a single predictor cannot necessarily explain complex economic outcomes. I learned to distinguish statistical association from reliable prediction.
-
-![Population GDP Regression](assets/Population%E2%80%93GDP%20Regression.png)
-
-*Figure 3. Population–GDP regression.*
-
----
-
-# 3. Similarity and Clustering – Units 5–6
-
-## Unit 5 – Jaccard Distance
-
-The categorical similarity exercise produced:
-
-| Comparison | Distance |
-|---|---:|
-| Jack–Mary | 0.7273 |
-| Jack–Jim | 0.4444 |
-| Jim–Mary | 0.9231 |
-
-Jack and Jim were the most similar pair, demonstrating how similarity depends on attribute representation.
-
-![Jaccard Calculations](assets/Jaccard%20Calculations.png)
+![Jaccard](assets/Jaccard%20Calculations.png)
 
 *Figure 4. Jaccard calculations.*
 
-## Unit 5 – K-Means Wiki
-
-The wiki explored centroid initialisation, iterative assignment and cluster interpretation. Generated clusters require validation; silhouette analysis offers one possible measure (Rousseeuw, 1987).
+The K-Means wiki examined centroid selection and cluster interpretation. Elbow plots illustrated that choosing k requires validation. Iris clustering produced **silhouette = 0.459** and **adjusted Rand index = 0.6201**. These results suggest partially meaningful clusters rather than perfect recovery of known classes (Rousseeuw, 1987).
 
 ![K-Means Wiki](assets/Wiki%20.jpeg)
 
-*Figure 5. K-Means wiki evidence.*
-
-## Unit 6 – Iris Clustering
-
-I applied K-Means with three clusters to Iris data. This illustrated why unsupervised assignments should not automatically be interpreted as known classification labels.
+*Figure 5. Wiki participation.*
 
 ![Iris Clustering](assets/Iris%20Clustering.png)
 
 *Figure 6. Iris clustering.*
 
----
+## Unit 6: Airbnb Group Project
 
-# 4. Unit 6 Group Project – Airbnb NYC
+Using New York City Airbnb data (Dgomonov, 2019), we compared Linear Regression, Random Forest (Breiman, 2001), and XGBoost (Chen and Guestrin, 2016).
 
-The group investigated Airbnb listing-price prediction and supply segmentation using New York City Airbnb Open Data (Dgomonov, 2019).
-
-We compared Linear Regression, Random Forest (Breiman, 2001) and XGBoost (Chen and Guestrin, 2016).
-
-| Model | R² |
+| Model | Test R² |
 |---|---:|
 | Linear Regression | 0.501 |
 | Tuned Random Forest | 0.608 |
 | Untuned XGBoost | 0.617 |
 | Tuned XGBoost | **0.623** |
 
-Although tuned XGBoost performed best, errors for expensive listings limited the reliability of some recommendations.
+Tuned XGBoost performed best overall, but errors varied by price band: cheaper listings were overestimated by approximately **$17**, and listings above **$500** underestimated by approximately **$866** on average. Therefore, a limited mid-market pricing pilot was more defensible than unrestricted recommendations. The group report also showed that four clusters were selected for business usefulness even though a two-cluster solution had the stronger silhouette score. That trade-off had to be disclosed rather than presented as statistical optimality.
 
-![Airbnb Model Comparison](assets/Airbnb%20Model%20Comparison%20and%20Segmentation2.png)
+![Airbnb Models](assets/Airbnb%20Model%20Comparison%20and%20Segmentation2.png)
 
-*Figure 7. Regression model comparison.*
+*Figure 7. Model comparison.*
 
-K-Means identified four supply-side segments: high-turnover performers, listed-but-not-booking properties, commercial operators and dormant hosts.
+Four **supply-side**, not customer, clusters were identified because guest data were unavailable. The “listed but not booking” segment represented **22.5%** of listings; availability was not evidence of confirmed bookings.
 
-![Airbnb Supply Segmentation](assets/Airbnb%20Model%20Comparison%20and%20Segmentation1.png)
+![Airbnb Clusters](assets/Airbnb%20Model%20Comparison%20and%20Segmentation1.png)
 
-*Figure 8. Airbnb supply segmentation.*
+*Figure 8. Supply segmentation.*
 
-## Individual Contribution and Feedback
-
-I completed my assigned part of the group project and reviewed the full research report for consistency, quality and presentation before submission.
-
-Reviewing the complete work strengthened my understanding of how individual contributions form a coherent investigation.
-
-My peer self-evaluation was **29/35**. Tutor feedback recognised the methodology but recommended stronger business interpretation, model justification and critical evaluation.
+I completed my assigned section and reviewed the entire group report for coherence and presentation. The review also made me more aware of how the methods, charts and commercial conclusion must support one another rather than appear as disconnected contributions. My peer self-evaluation was **29/35**; tutor feedback encouraged stronger business interpretation and critical justification.
 
 ![Tutor Feedback](assets/Tutor%20Feedback.png)
 
@@ -132,94 +77,63 @@ My peer self-evaluation was **29/35**. Tutor feedback recognised the methodology
 
 ![Peer Evaluation](assets/Peer%20Evaluation.png)
 
-*Figure 10. Peer self-evaluation.*
+*Figure 10. Peer evaluation.*
 
----
+## Units 7–8: Neural Networks and Optimisation
 
-# 5. Neural Networks and Optimisation – Units 7–8
+Perceptron exercises explored weighted inputs, bias and AND classification. Gradient descent demonstrated parameter sensitivity: **100 iterations at 0.08** yielded cost **0.004121**, whereas **0.10** diverged to approximately **5.97 × 10²⁸**. Increasing iterations at 0.01 reduced cost from **0.480407** (100) to **0.031985** (500). MovieLens yielded **RMSE 1.0400** and **MAE 0.8358**.
 
-## Unit 7 – Perceptrons
+![Perceptron](assets/Perceptron%20Outputs.png)
 
-The activities investigated weighted inputs, biases, Boolean AND classification and multilayer networks. I learned why single-layer perceptrons cannot represent every decision boundary.
+*Figure 11. Perceptron exercise.*
 
-![Perceptron Outputs](assets/Perceptron%20Outputs.png)
+![Gradient 1](assets/Gradient%20Descent%20Results1.jpeg)
 
-*Figure 11. Perceptron outputs.*
+*Figure 12. Gradient descent.*
 
-## Unit 8 – Gradient Descent
+![Gradient 2](assets/Gradient%20Descent%20Results2.jpeg)
 
-| Iterations | Learning Rate | Final Cost |
-|---|---:|---:|
-| 100 | 0.08 | 0.004121 |
-| 100 | 0.01 | 0.480407 |
-| 500 | 0.01 | 0.031985 |
-| 100 | 0.10 | Approximately 5.97 × 10²⁸ |
+*Figure 13. Parameter comparison.*
 
-The results demonstrated that unsuitable learning rates can cause divergence, while additional iterations may improve convergence.
+![MovieLens](assets/MovieLens%20Recommender%20Results.png)
 
-![Gradient Descent Results 1](assets/Gradient%20Descent%20Results1.jpeg)
+*Figure 14. Recommender performance.*
 
-*Figure 12. Gradient-descent experiment.*
+## Unit 9: CNN Classification and Ethics
 
-![Gradient Descent Results 2](assets/Gradient%20Descent%20Results2.jpeg)
+Changing the test image to **`x_test[12]`** produced a correct **dog** prediction with **75.13% confidence**, verified against `y_test[12]`. This provided additional evidence beyond a single image. The true class and predicted class were checked at the same index, avoiding the misleading comparison produced when different indices were used for the image and label. Confidence remained below 100% despite correct classification.
 
-*Figure 13. Additional optimisation results.*
+![Unit 9 Test Image](assets/Unit9-Alternative-Test-Image.png)
 
-## MovieLens Seminar
+*Figure 15. Alternative test image and prediction.*
 
-The recommender-system exercise produced RMSE **1.0400** and MAE **0.8358**, highlighting the importance of evaluating prediction error alongside recommendation quality.
+The separate ethical reflection examined classification errors, dataset bias, privacy and human oversight. Responsible deployment requires robust evaluation and transparent limits (Ghallab, 2019); adversarial-image research also highlights interpretation challenges (Zhou and Firestone, 2019).
 
-![MovieLens Recommender Results](assets/MovieLens%20Recommender%20Results.png)
+## Unit 10: CNN Feature Maps
 
-*Figure 14. MovieLens results.*
+An external car image was correctly classified at **99.59%**, while a teacup was labelled **airplane** at **52.78%**: the classifier could not reject an unfamiliar class (Hendrycks and Gimpel, 2017).
 
----
+![CNN Car](assets/CNN%20Car%20and%20Teacup%20Predictions.png)
 
-# 6. CNN Activities – Units 9–10
+*Figure 16. Car prediction.*
 
-## Unit 9 – CNN Object Recognition
+![CNN Teacup](assets/CNN%20Car%20and%20Teacup%20Predictions1.png)
 
-The activity explored image classification and prediction confidence. The saved notebook also includes selecting a test image using `x_test[7]`. However, the available evidence does not establish a separate prediction result for a modified `x_test[16]` experiment.
+*Figure 17. Teacup prediction.*
 
-![CNN Car Prediction](assets/CNN%20Car%20and%20Teacup%20Predictions.png)
+Feature maps from `conv2d` revealed local pattern responses; `conv2d_1` showed more selective activations, including nearly inactive filters. ReLU permits nonlinear representation, but activation maps **do not establish the cause** of a classification.
 
-*Figure 15. Correct car classification.*
+![CNN Features 1](assets/Unit10_Intermediate_Feature_Maps_1.png)
 
-![CNN Teacup Prediction](assets/CNN%20Car%20and%20Teacup%20Predictions1.png)
+*Figure 18. First convolutional layer.*
 
-*Figure 16. Incorrect teacup classification.*
+![CNN Features 2](assets/Unit10_Intermediate_Feature_Maps_2.png)
 
-### Ethical and Professional Reflection
+*Figure 19. Subsequent convolutional layer.*
 
-Image classifiers may produce confident but incorrect predictions, especially when inputs differ from training examples. Responsible use requires recognising dataset limitations, assessing unexpected predictions and avoiding unsupported claims of reliability. Human oversight is particularly important when classification errors could affect safety or important decisions.
+## Unit 11: Individual Pneumonia Investigation
 
-## Unit 10 – CNN Layer Analysis and Critical Reflection
-
-Convolutional layers extract visual patterns, while ReLU introduces non-linearity by setting negative activations to zero. Intermediate feature maps illustrate how representations change across successive layers.
-
-![Intermediate CNN Feature Maps](assets/Unit10_Intermediate_Feature_Maps_1.png)
-
-*Figure 17. Intermediate CNN feature maps illustrating learned visual representations.*
-
-![Additional CNN Feature Maps](assets/Unit10_Intermediate_Feature_Maps_2.png)
-
-*Figure 18. Feature maps from a subsequent convolutional layer.*
-
-The intermediate feature maps provided insight into how the CNN processes visual information through successive layers. Earlier convolutional layers respond to relatively simple patterns, while deeper layers can represent more complex combinations of visual features.
-
-ReLU enables the network to learn non-linear relationships. However, feature maps show layer responses to an input image; they do not independently establish why a particular classification decision was made.
-
-The model correctly classified a car with **99.59% confidence** but incorrectly classified a teacup as an airplane with **52.78% confidence**.
-
-This demonstrated that feature extraction does not guarantee reliable recognition. Closed-set classifiers may assign unfamiliar inputs to known categories, highlighting the importance of training-data coverage and out-of-distribution detection.
-
----
-
-# 7. Unit 11 – Individual Pneumonia Project
-
-The project compared HOG features with a Linear Support Vector Machine against a custom CNN using chest X-ray images (Mooney, 2018). The SVM approach builds on maximum-margin classification (Cortes and Vapnik, 1995).
-
-The methodology included preprocessing, group-aware splitting, cross-validation and an independent holdout of **1,165 images**.
+Using chest X-rays (Mooney, 2018), I compared HOG–Linear SVM (Cortes and Vapnik, 1995) with a custom CNN. Development used five group-aware folds and an independent **1,165-image holdout**. Subject grouping was inferred from filenames, not verified patient identifiers.
 
 | Metric | HOG–SVM | CNN |
 |---|---:|---:|
@@ -228,213 +142,130 @@ The methodology included preprocessing, group-aware splitting, cross-validation 
 | F1-score | **96.19%** | 94.28% |
 | False negatives | **41** | 75 |
 
-The classical model performed better, demonstrating that greater complexity does not guarantee stronger generalisation.
+The simpler SVM outperformed the CNN. False negatives were particularly consequential, while limited demographics prevented meaningful subgroup-fairness conclusions.
 
-![Pneumonia Performance Comparison](assets/Pneumonia%20Performance%20Comparison%20and%20Confusion%20Matrices.png)
+![Pneumonia Results](assets/Pneumonia%20Performance%20Comparison%20and%20Confusion%20Matrices.png)
 
-*Figure 19. Performance comparison and confusion matrices.*
+*Figure 20. Holdout results.*
 
-Grad-CAM examined CNN predictions (Selvaraju et al., 2017). Some heatmaps suggested attention outside the lung fields, but these visualisations cannot establish causality.
+Grad-CAM sometimes highlighted peripheral regions; attention visualisations suggest possible shortcuts but cannot prove model reasoning (Selvaraju et al., 2017). Neither model is clinically deployment-ready. The original dataset is limited in provenance and demographic detail; even a strong internal holdout cannot substitute for external testing across hospitals, scanners and patient populations. This was a research comparison, not a diagnostic system.
 
-![Grad-CAM Results](assets/Grad-CAM%20Results.png)
+![Grad-CAM](assets/Grad-CAM%20Results.png)
 
-*Figure 20. Grad-CAM visualisations.*
+*Figure 21. CNN explanations.*
 
-False negatives, shortcut learning, dataset representativeness and patient safety were major concerns. Neither experimental model is ready for autonomous clinical deployment without further validation.
+**Progression from Unit 6:** Airbnb concerned price prediction and business segmentation; pneumonia required clinical sensitivity, error analysis and explainability. There was **no Unit 6 proposal for this individual project**, so this is a learning comparison, not a fabricated proposal assessment.
 
-## Evaluation in Relation to Unit 6
+## Unit 11: Performance Measurement
 
-No separate Unit 6 proposal for pneumonia was available in the documented portfolio. This comparison therefore evaluates learning progression rather than claiming to assess an original proposal.
+Changing regularisation demonstrated that hyperparameter choices require empirical evidence (Pedregosa et al., 2011).
 
-Unit 6 focused on business regression and clustering, while Unit 11 required healthcare classification, sensitivity analysis and explainability. The progression demonstrated that evaluation criteria must reflect application-specific consequences.
+| Logistic C | ROC-AUC | Ridge α | R² |
+|---:|---:|---:|---:|
+| 0.001 | 0.990356 | 0 | 0.484906 |
+| 0.01 | 0.995178 | 0.01 | 0.484921 |
+| 0.1 | 0.997065 | 0.1 | 0.485049 |
+| **1** | **0.997694** | 1 | 0.485896 |
+| 10 | 0.994549 | 10 | 0.488092 |
+| 100 | 0.983648 | **100** | **0.490477** |
 
----
+The highest tested AUC occurred at **C = 1**; the highest tested R² at **α = 100**. Neither establishes a universal optimum.
 
-# 8. Unit 11 – Model Performance Measurement
+![Unit 11 Regularisation](assets/Unit%2011%20Performance%20Results.png)
 
-The activity investigated how regularisation affects classification and regression performance using scikit-learn (Pedregosa et al., 2011).
+*Figure 22. Performance measurement.*
 
-## Logistic Regression – Effect of C
+## Collaborative Discussions
 
-The breast-cancer dataset produced:
-
-| C | ROC-AUC |
-|---:|---:|
-| 0.001 | 0.990356 |
-| 0.01 | 0.995178 |
-| 0.1 | 0.997065 |
-| 1 | **0.997694** |
-| 10 | 0.994549 |
-| 100 | 0.983648 |
-
-C = 1 achieved the highest AUC among tested values. Increasing C further reduced performance, demonstrating that weaker regularisation does not necessarily improve generalisation.
-
-## Ridge Regression – Effect of Alpha
-
-The diabetes dataset produced:
-
-| Alpha | R² |
-|---:|---:|
-| 0 | 0.484906 |
-| 0.01 | 0.484921 |
-| 0.1 | 0.485049 |
-| 1 | 0.485896 |
-| 10 | 0.488092 |
-| 100 | **0.490477** |
-
-R² improved modestly across the tested alpha values. Alpha = 100 performed best within this experiment, although additional testing would be required to identify an optimal value.
-
-![Unit 11 Performance Results](assets/Unit%2011%20Performance%20Results.png)
-
-*Figure 21. Regularisation experiments and performance results.*
-
----
-
-# 9. Collaborative Discussions
-
-## Discussion 1 – Industry 4.0 and Industry 5.0
-
-The discussion examined digital transformation, healthcare resilience and human oversight. The CrowdStrike disruption illustrated how digital-system failures can affect essential services.
-
-I learned that technological efficiency must be balanced with resilience, accountability and professional responsibility.
+Discussion 1 addressed Industry 4.0/5.0, healthcare resilience and responsible human oversight during widespread digital disruption.
 
 ![Discussion 1 Initial](assets/Collaborative%20Discussions%201%20initial.png)
 
-*Figure 22. Initial discussion contribution.*
+*Figure 23. Initial contribution.*
 
 ![Discussion 1 Summary](assets/Collaborative%20Discussions%201%20summery.png)
 
-*Figure 23. Discussion summary.*
+*Figure 24. Summary.*
 
-### Peer Interaction Evidence
+![Discussion 1 Reply A](assets/Discussion1-Peer-Reply.jpeg)
 
-The following screenshots document my participation in discussions with peers.
+*Figure 25. Peer reply one.*
 
-![Discussion 1 First Reply](assets/Discussion1-Peer-Reply.jpeg)
+![Discussion 1 Reply B](assets/Discussion1-Peer-Reply2.jpeg)
 
-*Figure 24. First peer response in Discussion 1.*
+*Figure 26. Peer reply two.*
 
-![Discussion 1 Second Reply](assets/Discussion1-Peer-Reply2.jpeg)
-
-*Figure 25. Second peer response in Discussion 1.*
-
-## Discussion 2 – AI Writers
-
-The discussion examined AI-generated writing, authorship, reliability and accountability.
-
-Generative AI can improve performance on certain writing tasks (Noy and Zhang, 2023), while potentially reducing the collective diversity of creative outputs (Doshi and Hauser, 2024).
-
-These findings suggest that productivity benefits must be considered alongside accuracy, transparency, originality and human responsibility.
+Discussion 2 considered AI writing, authorship, verification and accountability: generative AI may raise writing productivity (Noy and Zhang, 2023) while narrowing collective creative diversity (Doshi and Hauser, 2024).
 
 ![Discussion 2 Initial](assets/Collaborative%20Discussions%202%20initial.png)
 
-*Figure 26. Initial discussion contribution.*
+*Figure 27. Initial contribution.*
 
 ![Discussion 2 Summary](assets/Collaborative%20Discussions%202%20summery.png)
 
-*Figure 27. Discussion summary.*
+*Figure 28. Summary.*
 
-### Peer Interaction Evidence
+![Discussion 2 Reply A](assets/Discussion2-Peer-Reply.jpeg)
 
-The screenshots provide evidence of my engagement with other participants.
+*Figure 29. Peer reply one.*
 
-![Discussion 2 First Reply](assets/Discussion2-Peer-Reply.jpeg)
+![Discussion 2 Reply B](assets/Discussion2-Peer-Reply2.jpeg)
 
-*Figure 28. First peer response in Discussion 2.*
+*Figure 30. Peer reply two.*
 
-![Discussion 2 Second Reply](assets/Discussion2-Peer-Reply2.jpeg)
+## Unit 12 and Professional Development
 
-*Figure 29. Second peer response in Discussion 2.*
+Unit 12 examined self-supervised learning, Neural Architecture Search, Edge AI and sustainability. These methods raise important computational, privacy and environmental trade-offs requiring careful governance. I intend to strengthen reproducibility, external validation, stakeholder communication and ethical assessment.
 
----
+![Unit 12](assets/Unit%2012%20Evidence.png)
 
-# 10. Unit 12 – Future Machine Learning
-
-Unit 12 explored self-supervised learning, Neural Architecture Search, Edge AI and sustainable machine learning.
-
-These approaches offer opportunities for efficient deployment but introduce challenges involving privacy, computational resources and responsible governance.
-
-![Unit 12 Evidence](assets/Unit%2012%20Evidence.png)
-
-*Figure 30. Unit 12 learning evidence.*
+*Figure 31. Future-learning activity.*
 
 ---
 
-# 11. Final Critical Reflection
+# Final Critical Reflection
 
-This reflection follows the **What? So What? Now What?** framework (Rolfe, Freshwater and Jasper, 2001).
+This reflection uses the **What? So What? Now What?** model (Rolfe, Freshwater and Jasper, 2001).
 
-## WHAT – Learning Experiences
+## WHAT? Learning Experiences
 
-At the beginning of the module, I mainly understood machine learning as selecting algorithms, training models and comparing accuracy. I expected technical performance to be the primary indicator of success. However, the twelve units demonstrated that reliable outcomes also depend on data quality, evaluation methods, interpretability and professional judgement.
+At the beginning of this module, I thought successful machine learning mainly involved choosing an algorithm and reporting the highest accuracy. Across twelve units, I discovered that data suitability, reproducibility, assumptions, error analysis, communication and ethical consequences are equally important. Practical exercises challenged me to connect abstract concepts with observable behaviour rather than accept results without questioning them.
 
-The Auto-MPG exercise showed why missing values and feature relationships must be investigated before modelling. Regression and clustering activities highlighted how assumptions and data representation influence results. The Jaccard exercise demonstrated that similarity depends on selected attributes.
+In earlier exercises, I tended to regard a completed notebook and a plausible figure as evidence of success. By later units, I was checking whether splits were defensible, whether metrics matched the intended use and whether an explanation supported the conclusion.
 
-Gradient descent was particularly useful because a small change in learning rate produced dramatically different outcomes. A learning rate of 0.08 achieved a low final cost, whereas 0.10 caused divergence. This demonstrated the importance of understanding optimisation rather than simply running an algorithm.
+The Auto-MPG activity showed why missing values and correlated features require investigation before modelling. The Jaccard exercise demonstrated that similarity depends on selected categorical attributes. Iris clustering revealed the difference between discovering groups and reproducing known labels: its silhouette and adjusted Rand results indicated meaningful but imperfect separation. These exercises encouraged me to examine the data before interpreting scores.
 
-The CNN activities challenged my understanding of prediction confidence. Although the model correctly recognised a car, it misclassified a teacup as an airplane. Examining intermediate feature maps helped me understand how convolutional layers represent visual information without guaranteeing correct predictions.
+Gradient descent made optimisation tangible. Changing the learning rate from 0.08 to 0.10 caused dramatic divergence, demonstrating that parameter selection determines whether learning succeeds. The CNN activities challenged my interpretation of confidence. An alternative image was correctly recognised as a dog, while the external teacup received an incorrect label. Feature maps revealed internal activity without conclusively explaining the prediction.
 
-Two assessments were particularly influential: the Unit 6 Airbnb group project and the Unit 11 pneumonia detection project. They provided different business and healthcare contexts for evaluating machine-learning decisions.
+Two assessments posed distinct challenges: the Airbnb group project applied regression and clustering to a business problem, while my individual pneumonia investigation compared medical-image classifiers. Both required matching evaluation criteria to decisions rather than using generic performance measures.
 
-## SO WHAT – Critical Evaluation
+## SO WHAT? Critical Evaluation
 
-The Airbnb project demonstrated that strong aggregate performance does not guarantee equally reliable predictions across all observations. Tuned XGBoost achieved an R² of 0.623, but errors for expensive listings remained substantial. This challenged my assumption that the best overall metric automatically identifies the most useful business model.
+The Airbnb project demonstrated the limits of aggregate metrics. Tuned XGBoost achieved the strongest overall R², but errors varied across prices. Expensive properties were systematically underestimated, while cheaper listings were overestimated. A model appearing satisfactory overall could therefore mislead particular groups of hosts. I learned that error analysis by price band and clear deployment boundaries matter alongside headline performance.
 
-Tutor feedback reinforced the importance of translating analytical findings into practical recommendations. Although the project demonstrated technical strengths, the feedback identified opportunities to improve model justification, business interpretation and critical discussion of limitations.
+Tutor feedback requested stronger business interpretation and justified recommendations, challenging my focus on technical competence. I completed my assigned section and reviewed the full report for coherence and presentation. Reading it revealed how easily individually written sections can become disconnected. My peer self-evaluation of 29/35 reflected participation but also opportunities for better coordination. In future, I will agree expectations earlier, schedule review checkpoints and ensure recommendations follow the evidence.
 
-My individual contribution involved completing my assigned section and reviewing the entire research report before submission. This helped me understand how separate contributions must form a coherent investigation. However, I recognised that completing assigned work alone is insufficient without communication, coordination and collective review.
+This feedback also made me reconsider my contribution. Reviewing a finished report is useful, but intervening sooner would have allowed problems in scope, interpretation or consistency to be corrected before they reached the final draft. I therefore see teamwork as an iterative analytical responsibility, not merely combining completed sections.
 
-My peer self-evaluation score of 29/35 reflected positive participation while encouraging me to improve preparation and collaboration. In future group projects, I need to clarify responsibilities earlier and establish regular checkpoints.
+The pneumonia project challenged my assumption that deep learning would outperform classical approaches. HOG–SVM achieved higher accuracy and sensitivity than the CNN despite its simpler design. False negatives were especially important: 41 for SVM versus 75 for CNN. In healthcare, missing pneumonia may delay investigation. I learned to prioritise application-specific error consequences instead of relying solely on accuracy.
 
-The pneumonia project challenged another assumption: that deep learning would necessarily outperform classical machine learning in image classification.
+I became cautious about rigorous evaluation. The project used a holdout and filename-inferred subject grouping to limit leakage, but these identifiers were not confirmed patient records. Reliable demographic information was unavailable for meaningful fairness assessment. Consequently, holdout performance does not establish clinical generalisability or equity. Reporting these limitations openly is preferable to concealing them behind favourable results.
 
-The HOG–SVM achieved 94.51% accuracy compared with 91.93% for the CNN. More importantly, it produced 41 false negatives rather than 75. These results demonstrated that architectural complexity does not guarantee better generalisation and that the significance of errors depends on the application.
+Grad-CAM complicated my interpretation of CNN predictions. Some activations appeared outside lung fields, suggesting possible shortcut learning. Yet an attention map cannot establish causality. I now regard explanations as supporting evidence requiring testing, not definitive proof of appropriate model reasoning (Selvaraju et al., 2017).
 
-In healthcare, missed positive cases may delay clinical investigation. Therefore, sensitivity and false-negative counts can be particularly important. However, strong performance on one dataset cannot establish clinical readiness.
+Collaborative discussions extended these lessons beyond modelling. Industry 4.0/5.0 raised concerns about resilience and oversight when essential services rely on digital systems. The AI-writing debate revealed tensions between productivity, originality and responsibility. Research suggests individual writing benefits but possible reductions in collective diversity (Noy and Zhang, 2023; Doshi and Hauser, 2024). Professional responsibility includes checking outputs, disclosing limitations and retaining accountability.
 
-Grad-CAM introduced another limitation. Some visualisations suggested that the CNN might attend to regions outside the lungs, raising concerns about shortcut learning. Nevertheless, attention maps do not prove the causal basis of a prediction. This showed me why explainability techniques require cautious interpretation and additional testing (Selvaraju et al., 2017).
+## NOW WHAT? Development Actions
 
-The project also exposed limitations in fairness evaluation. Without reliable demographic information, meaningful comparisons across patient groups were not possible. I learned that acknowledging missing evidence is more responsible than making unsupported claims about equitable performance.
+My immediate goal is reproducible experimentation. I will document dataset provenance, cleaning, data partitions, random seeds, baselines and hyperparameters. I will reserve independent evaluation data wherever feasible rather than repeatedly tune against a final test set. The regularisation exercise reinforced why parameter choices require evidence.
 
-Collaborative discussions broadened my understanding of ethical and professional responsibilities. The healthcare digital-transformation discussion highlighted resilience and human oversight. The AI-writing discussion raised questions about misinformation, authorship and transparency. Research on generative AI also demonstrated that individual productivity and collective creativity may be affected differently (Noy and Zhang, 2023; Doshi and Hauser, 2024).
+To measure improvement, I will maintain an experiment log for my next project and review it before reporting results. I will specify success criteria in advance, include at least one baseline and document outcomes. These actions should make reports more auditable.
 
-The Unit 11 regularisation activity reinforced the importance of testing assumptions empirically. Changes to C and alpha produced measurable differences in AUC and R², demonstrating that parameter selection requires evidence rather than intuition.
+Second, I will evaluate models beyond aggregate scores. For regression, I will investigate price-band errors and communicate uncertainty. For higher-risk classification, I will examine sensitivity, false negatives, calibration and available subgroups. Missing demographic or external-validation evidence must be acknowledged rather than treated as evidence of readiness.
 
-Overall, I progressed from reporting model results to questioning their reliability, limitations and consequences. I now understand successful machine learning as a balance between predictive performance, trustworthy evaluation, communication and ethical responsibility.
+Third, I will improve teamwork by agreeing responsibilities, scheduling intermediate reviews and checking consistency across sections. I will communicate results more clearly to non-technical stakeholders, linking recommendations to evidence, uncertainty and limitations.
 
-## NOW WHAT – Professional Development
-
-My first priority is to strengthen reproducible machine-learning practice. In future projects, I will document dataset sources, preprocessing choices, data splits, hyperparameters and evaluation procedures. I will establish baseline models before experimenting with more complex architectures.
-
-I also intend to develop stronger skills in model calibration, fairness assessment and external validation, particularly for higher-risk applications. Where demographic or clinical information is unavailable, I will acknowledge the limitation rather than claim that a model is fair or suitable for deployment.
-
-Another priority is communicating results more effectively to non-technical stakeholders. The Airbnb feedback demonstrated that analytical reports must explain the practical significance of findings, not merely present metrics. I will therefore make assumptions, uncertainty and recommendations more explicit.
-
-For future group projects, I will establish regular checkpoints, document my individual responsibilities and continue reviewing complete submissions for consistency between objectives, methods, results and conclusions.
-
-My short-term goal is to improve reproducibility and experiment tracking. My medium-term goal is to develop advanced evaluation and explainability skills. My longer-term goal is to apply responsible machine-learning principles in professional projects.
-
-The most significant lesson from this module is that choosing the model with the highest reported score is insufficient. Responsible machine learning requires critical judgement throughout the workflow, from data preparation and modelling to interpretation, communication and accountability.
-
----
-
-# 12. Professional Skills and Development Plan
-
-| Skill | Evidence | Development Priority |
-|---|---|---|
-| Data analysis | Auto-MPG, Airbnb | Data auditing |
-| Programming | Python, SVM, CNN | Reproducibility |
-| Critical evaluation | Pneumonia project | External validation |
-| Optimisation | Gradient descent, regularisation | Experiment tracking |
-| Teamwork | Airbnb group project | Regular checkpoints |
-| Communication | Discussions and tutor feedback | Stakeholder reporting |
-| Ethics | Medical imaging, AI writing | Responsible AI |
-
-**Short term:** Improve experiment documentation.
-
-**Medium term:** Develop explainability and validation skills.
-
-**Long term:** Apply responsible machine learning professionally.
+In the medium term, I will strengthen experiment tracking, explainability and external validation. Longer term, I hope to apply machine learning where decisions can be scrutinised. My central lesson is that a successful model is not necessarily the highest-scoring one. Success also requires sound data, transparent evaluation, safeguards and recognition of what evidence cannot establish.
 
 ---
 
@@ -446,18 +277,24 @@ Chen, T. and Guestrin, C. (2016) ‘XGBoost: A scalable tree boosting system’,
 
 Cortes, C. and Vapnik, V. (1995) ‘Support-vector networks’, *Machine Learning*, 20, pp. 273–297. https://doi.org/10.1007/BF00994018
 
-Dgomonov (2019) *New York City Airbnb Open Data*. Kaggle. Available at: https://www.kaggle.com/datasets/dgomonov/new-york-city-airbnb-open-data
+Dgomonov (2019) *New York City Airbnb Open Data*. Kaggle. Available at: https://www.kaggle.com/datasets/dgomonov/new-york-city-airbnb-open-data (Accessed: 14 October 2026).
 
 Doshi, A.R. and Hauser, O.P. (2024) ‘Generative AI enhances individual creativity but reduces the collective diversity of novel content’, *Science Advances*, 10(28), eadn5290. https://doi.org/10.1126/sciadv.adn5290
 
-Mooney, P. (2018) *Chest X-Ray Images (Pneumonia)*. Kaggle. Available at: https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia
+Ghallab, M. (2019) ‘Responsible AI: requirements and challenges’, *AI Perspectives*, 1, article 3. https://doi.org/10.1186/s42467-019-0003-z
+
+Hendrycks, D. and Gimpel, K. (2017) ‘A baseline for detecting misclassified and out-of-distribution examples in neural networks’, *International Conference on Learning Representations*. Available at: https://arxiv.org/abs/1610.02136 (Accessed: 14 October 2026).
+
+Mooney, P. (2018) *Chest X-Ray Images (Pneumonia)*. Kaggle. Available at: https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia (Accessed: 14 October 2026).
 
 Noy, S. and Zhang, W. (2023) ‘Experimental evidence on the productivity effects of generative artificial intelligence’, *Science*, 381(6654), pp. 187–192. https://doi.org/10.1126/science.adh2586
 
-Pedregosa, F. et al. (2011) ‘Scikit-learn: Machine learning in Python’, *Journal of Machine Learning Research*, 12, pp. 2825–2830. Available at: https://jmlr.org/papers/v12/pedregosa11a.html
+Pedregosa, F. et al. (2011) ‘Scikit-learn: Machine learning in Python’, *Journal of Machine Learning Research*, 12, pp. 2825–2830. Available at: https://jmlr.org/papers/v12/pedregosa11a.html (Accessed: 14 October 2026).
 
 Rolfe, G., Freshwater, D. and Jasper, M. (2001) *Critical Reflection in Nursing and the Helping Professions: A User's Guide*. Basingstoke: Palgrave Macmillan.
 
 Rousseeuw, P.J. (1987) ‘Silhouettes: A graphical aid to the interpretation and validation of cluster analysis’, *Journal of Computational and Applied Mathematics*, 20, pp. 53–65. https://doi.org/10.1016/0377-0426(87)90125-7
 
 Selvaraju, R.R. et al. (2017) ‘Grad-CAM: Visual explanations from deep networks via gradient-based localization’, *Proceedings of the IEEE International Conference on Computer Vision*, pp. 618–626. https://doi.org/10.1109/ICCV.2017.74
+
+Zhou, Z. and Firestone, C. (2019) ‘Humans can decipher adversarial images’, *Nature Communications*, 10, article 1334. https://doi.org/10.1038/s41467-019-08931-6
