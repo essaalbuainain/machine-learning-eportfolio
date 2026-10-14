@@ -1,8 +1,7 @@
 
 # Machine Learning – ML_PCOM7E e-Portfolio
 
-**Student Name:** [Your Name]  
-**Student Number:** [Your Student Number]  
+**Student Name:** Essa Albuainain
 **Module:** Machine Learning (ML_PCOM7E)  
 **Institution:** University of Essex Online  
 **Assessment:** Individual e-Portfolio
