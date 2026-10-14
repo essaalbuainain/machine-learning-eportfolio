@@ -5,149 +5,101 @@
 **Module:** Machine Learning (ML_PCOM7E)  
 **Institution:** University of Essex Online  
 **Assessment:** Individual e-Portfolio  
-**Published e-Portfolio:** https://essaalbuainain.github.io/machine-learning-eportfolio/
+**Portfolio URL:** https://essaalbuainain.github.io/machine-learning-eportfolio/
 
 ---
 
-## About This e-Portfolio
+## Introduction and Learning Outcomes
 
-This e-Portfolio documents my learning and professional development throughout the Machine Learning module. It brings together practical exercises, collaborative discussions, seminar activities, group and individual projects, tutor feedback, and critical reflection.
+This e-Portfolio presents evidence of my learning across Units 1–12, including practical activities, collaborative discussions, group and individual projects, tutor feedback, and critical reflection.
 
-My learning progressed from exploratory data analysis and regression to clustering, neural networks, model optimisation, explainable AI, and responsible machine-learning practice.
+The evidence addresses four learning outcomes: understanding legal, social, ethical and professional issues; assessing dataset suitability; applying and evaluating machine-learning methods; and collaborating effectively in virtual teams.
 
-Two major projects provided opportunities to apply these skills:
-
-- **Unit 6 Group Project:** Airbnb NYC Price Prediction and Supply Segmentation.
-- **Unit 11 Individual Project:** Pneumonia Detection Using HOG + Linear SVM and a Custom CNN.
-
-The portfolio demonstrates that successful machine learning requires more than strong predictive performance. Data quality, model limitations, interpretability, professional responsibility, and effective communication are equally important.
+My development progressed from data exploration and regression to clustering, neural networks, optimisation, explainability and responsible AI.
 
 ---
 
-## Learning Outcomes
+# 1. Foundations – Units 1–3
 
-| Learning Outcome | Portfolio Evidence |
-|---|---|
-| **LO1 – Legal, social, ethical and professional issues** | Collaborative discussions, medical imaging, CNN ethics, and responsible AI |
-| **LO2 – Dataset suitability and limitations** | Auto-MPG analysis, regression, Airbnb data preparation, and medical-image evaluation |
-| **LO3 – Application and critical evaluation of machine-learning techniques** | Regression, Jaccard distance, K-Means, neural networks, optimisation, recommender systems, and pneumonia classification |
-| **LO4 – Effective virtual teamwork** | Airbnb group assessment, tutor feedback, peer evaluation, and collaborative discussions |
+## Unit 1 – Introduction to Machine Learning
 
----
-
-# 1. Foundations of Machine Learning – Units 1–3
-
-The opening units developed my understanding of machine-learning principles and the importance of examining data before selecting an algorithm.
-
-I learned that model selection should depend on the problem, the available observations, the quality of the data, and the assumptions underlying each technique.
+Unit 1 introduced supervised and unsupervised learning, the machine-learning lifecycle, and the relationship between data quality and model performance. I recognised that selecting an algorithm requires understanding the problem, available evidence and practical limitations.
 
 ## Unit 2 – Exploratory Data Analysis
 
-The Auto-MPG exercise involved examining missing values, distributions, correlations, and relationships between vehicle characteristics.
+The Auto-MPG activity investigated distributions, missing values and correlations. Six horsepower values were missing, while vehicle weight, displacement and cylinders showed negative relationships with MPG.
 
-Six missing horsepower observations were identified. The analysis also showed strong negative correlations between MPG and vehicle weight, displacement, and cylinders.
-
-This demonstrated how exploratory data analysis can identify potential predictors and data-quality concerns before modelling.
-
-However, I also learned that correlation does not establish causation.
+The exercise demonstrated why data auditing should precede modelling and why correlation must not be confused with causation.
 
 ![Auto-MPG Correlation Heatmap](assets/Auto-MPG%20Correlation%20Heatmap.jpeg)
 
-*Figure 1. Auto-MPG correlation heatmap showing relationships between fuel efficiency and vehicle characteristics.*
+*Figure 1. Auto-MPG correlation analysis.*
 
 ## Unit 3 – Correlation and Regression
 
-The practical activities introduced covariance, Pearson correlation, simple linear regression, multiple linear regression, and polynomial regression.
-
-Comparing these techniques helped me understand how model assumptions and complexity influence fitted relationships.
-
-An important lesson was that a more flexible model can capture nonlinear patterns but may also increase the risk of overfitting.
+I explored covariance, Pearson correlation, linear regression and polynomial regression. Comparing these approaches demonstrated how model assumptions and complexity affect fitted relationships and the risk of overfitting.
 
 ![Correlation and Regression Results](assets/Correlation%20and%20Regression%20Results.jpg)
 
-*Figure 2. Correlation and regression practical results.*
+*Figure 2. Correlation and regression results.*
 
 ---
 
 # 2. Applied Regression – Unit 4
 
-Unit 4 extended regression analysis to fuel-consumption data and an investigation involving population and GDP-related indicators from 2001 to 2021.
+The practical work examined fuel-consumption relationships and population–GDP indicators from 2001 to 2021. The fitted regression illustrated the limitations of explaining complex outcomes using a single predictor.
 
-The activity involved examining associations, plotting observations, and interpreting a fitted regression line.
-
-The substantial variation around the fitted relationship demonstrated the limitations of using a single predictor to explain complex economic outcomes.
-
-I learned to distinguish between identifying an association and developing a model that is sufficiently reliable for practical decisions.
+I learned that an observed association does not automatically establish predictive reliability or causal influence.
 
 ![Population GDP Regression](assets/Population%E2%80%93GDP%20Regression.png)
 
-*Figure 3. Population and GDP-related regression analysis.*
+*Figure 3. Population–GDP regression.*
 
 ---
 
-# 3. Similarity Measures and Clustering – Units 5–6
+# 3. Similarity and Clustering – Units 5–6
 
 ## Unit 5 – Jaccard Distance
 
-The Jaccard activity compared categorical observations for Jack, Mary, and Jim.
+The Jaccard exercise compared categorical observations:
 
-The calculated distances were:
-
-| Comparison | Jaccard Distance |
+| Comparison | Distance |
 |---|---:|
-| Jack and Mary | 0.7273 |
-| Jack and Jim | 0.4444 |
-| Jim and Mary | 0.9231 |
+| Jack–Mary | 0.7273 |
+| Jack–Jim | 0.4444 |
+| Jim–Mary | 0.9231 |
 
-Jack and Jim were the most similar pair under the representation used.
-
-This activity demonstrated that the representation of categorical attributes influences the resulting similarity measures.
+Jack and Jim were the most similar pair. The activity showed how attribute representation affects similarity calculations.
 
 ![Jaccard Calculations](assets/Jaccard%20Calculations.png)
 
-*Figure 4. Jaccard distance calculations.*
+*Figure 4. Jaccard calculations.*
 
-## Unit 5 – K-Means Wiki Activity
+## Unit 5 – K-Means Wiki
 
-The K-Means wiki activity explored iterative cluster assignment and centroid updates.
-
-The animations demonstrated how the initial positions of centroids can influence the final clustering outcome.
-
-I learned that clustering algorithms can produce groups even when those groups do not necessarily represent meaningful natural categories. Cluster quality therefore requires interpretation and, where appropriate, validation measures such as silhouette analysis (Rousseeuw, 1987).
-
-This reinforced the importance of interpreting and validating clustering results.
+The wiki activity examined cluster assignment, centroid updates and sensitivity to initialisation. I learned that algorithmically generated clusters require interpretation and validation; silhouette analysis is one possible approach (Rousseeuw, 1987).
 
 ![K-Means Wiki](assets/Wiki%20.jpeg)
 
-*Figure 5. Unit 5 K-Means wiki activity.*
+*Figure 5. K-Means wiki evidence.*
 
 ## Unit 6 – Iris Clustering
 
-The Iris exercise applied K-Means with three clusters.
-
-This helped me understand the distinction between unsupervised clustering and supervised classification.
-
-Cluster labels are algorithmically assigned and do not necessarily correspond directly to known biological categories.
+I applied K-Means with three clusters to the Iris dataset. This demonstrated the difference between unsupervised groupings and known classification labels.
 
 ![Iris Clustering](assets/Iris%20Clustering.png)
 
-*Figure 6. Iris dataset clustering using K-Means.*
+*Figure 6. Iris clustering results.*
 
 ---
 
 # 4. Unit 6 Group Project – Airbnb NYC
 
-## Project Overview
+## Project and Results
 
-The group project investigated Airbnb NYC price prediction and supply segmentation using classical machine-learning techniques.
+The group investigated Airbnb NYC listing-price prediction and supply segmentation using the Airbnb Open Data dataset (Dgomonov, 2019).
 
-The analysis used the New York City Airbnb Open Data dataset (Dgomonov, 2019) and combined supervised regression with unsupervised clustering.
-
-The main objectives were to predict listing prices and identify meaningful supply-side patterns.
-
-## Regression Model Comparison
-
-The project compared Linear Regression, Random Forest, and XGBoost. Random forests aggregate predictions from multiple decision trees (Breiman, 2001), while XGBoost uses scalable gradient-boosted trees (Chen and Guestrin, 2016).
+The regression models included Linear Regression, Random Forest (Breiman, 2001) and XGBoost (Chen and Guestrin, 2016).
 
 | Model | R² |
 |---|---:|
@@ -156,76 +108,49 @@ The project compared Linear Regression, Random Forest, and XGBoost. Random fores
 | Untuned XGBoost | 0.617 |
 | Tuned XGBoost | **0.623** |
 
-Tuned XGBoost achieved the strongest overall performance.
-
-However, prediction errors remained substantial for expensive listings. This showed that aggregate performance metrics should not be interpreted without considering variation across different price categories.
+Although tuned XGBoost performed best, errors for expensive listings limited the reliability of some pricing recommendations.
 
 ![Airbnb Model Comparison](assets/Airbnb%20Model%20Comparison%20and%20Segmentation2.png)
 
-*Figure 7. Regression model comparison for Airbnb price prediction.*
+*Figure 7. Regression performance.*
 
-## Airbnb Supply Segmentation
-
-K-Means identified four supply-side segments:
-
-1. High-turnover performers.
-2. Listed-but-not-booking properties.
-3. Commercial operators.
-4. Dormant hosts.
-
-The project distinguished supply segmentation from customer segmentation because the dataset described listings and hosts rather than individual guests.
-
-The findings suggested opportunities for targeted pricing support, although the limitations of the available data reduced the certainty of business recommendations.
+K-Means identified four supply-side segments: high-turnover performers, listed-but-not-booking properties, commercial operators and dormant hosts.
 
 ![Airbnb Supply Segmentation](assets/Airbnb%20Model%20Comparison%20and%20Segmentation1.png)
 
-*Figure 8. Four Airbnb supply-side segments.*
+*Figure 8. Airbnb supply segmentation.*
 
-## Tutor Feedback
+## Individual Contribution and Teamwork
 
-Tutor feedback recognised the methodology, data preparation, feature engineering, model comparison, and visual presentation.
+I completed my assigned part of the group project and reviewed the full research report to check its overall quality, consistency and presentation before submission.
 
-Areas identified for improvement included stronger business interpretation, clearer justification of model selection, more critical discussion of limitations, and more developed interpretation of the clusters.
+Reviewing the complete report helped me understand how individual contributions fit together and why a group submission requires a coherent argument rather than separate pieces of analysis.
 
-This feedback demonstrated that technical accuracy must be accompanied by practical relevance and clear communication.
+My peer self-evaluation score was **29/35**. The experience developed my teamwork, communication and quality-review skills.
+
+Tutor feedback recognised the technical methodology while recommending stronger business interpretation, clearer model justification and deeper critical evaluation. I will apply this feedback by connecting future model results more explicitly to practical decisions.
 
 ![Tutor Feedback](assets/Tutor%20Feedback.png)
 
-*Figure 9. Tutor feedback on the Airbnb group assessment.*
-
-## Teamwork and Individual Contribution
-
-The project developed my experience of virtual collaboration, task allocation, coordination, and collective review. The portfolio includes a personal peer self-evaluation and tutor feedback as evidence of participation; however, the available material does not establish a detailed, individually attributable task log. Any account of specific coding, analysis or presentation responsibilities should be added only after checking the original group records.
-
-My self-evaluation score was **29/35**.
-
-The experience highlighted strengths in initiative and task completion, while also identifying opportunities to improve meeting preparation, communication, and shared review.
-
-I learned that effective virtual teamwork requires clear responsibilities, regular checkpoints, and collective accountability.
+*Figure 9. Tutor feedback.*
 
 ![Peer Evaluation](assets/Peer%20Evaluation.png)
 
-*Figure 10. Personal peer self-evaluation.*
+*Figure 10. Peer self-evaluation.*
 
 ---
 
 # 5. Neural Networks and Optimisation – Units 7–8
 
-## Unit 7 – Perceptron Exercises
+## Unit 7 – Perceptrons
 
-Unit 7 introduced perceptrons, Boolean AND classification, and multilayer neural networks using sigmoid activation.
-
-The practical exercises demonstrated how weighted inputs, biases, and activation functions influence classification.
-
-I also learned why simple perceptrons cannot solve every classification problem and why multilayer architectures are necessary for more complex relationships.
+The perceptron exercises covered Boolean AND classification, weighted inputs, biases and multilayer networks. I learned why single-layer perceptrons cannot represent every decision boundary.
 
 ![Perceptron Outputs](assets/Perceptron%20Outputs.png)
 
-*Figure 11. Perceptron classification outputs.*
+*Figure 11. Perceptron outputs.*
 
 ## Unit 8 – Gradient Descent
-
-The gradient-descent activity investigated the effects of learning rate and iteration count.
 
 | Iterations | Learning Rate | Final Cost |
 |---|---:|---:|
@@ -234,354 +159,214 @@ The gradient-descent activity investigated the effects of learning rate and iter
 | 500 | 0.01 | 0.031985 |
 | 100 | 0.10 | Approximately 5.97 × 10²⁸ |
 
-A moderate learning rate produced rapid improvement, while a larger learning rate caused divergence.
-
-This demonstrated that optimisation depends on appropriate hyperparameter selection and monitoring.
+The results demonstrated that inappropriate learning rates can cause divergence, while additional iterations may improve convergence.
 
 ![Gradient Descent Results 1](assets/Gradient%20Descent%20Results1.jpeg)
 
-*Figure 12. Gradient-descent experiment showing optimisation behaviour.*
+*Figure 12. Gradient-descent experiment.*
 
 ![Gradient Descent Results 2](assets/Gradient%20Descent%20Results2.jpeg)
 
-*Figure 13. Additional gradient-descent results illustrating the influence of parameter selection.*
+*Figure 13. Additional optimisation results.*
 
-## Unit 8 Seminar – MovieLens Recommender
+## MovieLens Seminar
 
-The seminar explored recommendation systems, collaborative filtering, matrix factorisation, and evaluation.
-
-The MovieLens 100K activity produced the following results for the matrix-factorisation model:
-
-| Metric | Result |
-|---|---:|
-| RMSE | 1.0400 |
-| MAE | 0.8358 |
-
-This demonstrated the importance of evaluating recommendation quality rather than assuming that low prediction error automatically guarantees useful recommendations.
+The MovieLens recommender activity produced an RMSE of **1.0400** and MAE of **0.8358**. It demonstrated the need to evaluate prediction error alongside practical recommendation quality.
 
 ![MovieLens Recommender Results](assets/MovieLens%20Recommender%20Results.png)
 
-*Figure 14. MovieLens recommender-system results.*
+*Figure 14. Recommender-system results.*
 
 ---
 
-# 6. Convolutional Neural Networks – Units 9–10
+# 6. CNN Activities – Units 9–10
 
-The CNN activities explored convolutional feature extraction, classification, and the limitations of image-recognition systems.
+The CNN exercises explored image classification and prediction confidence. The model correctly classified a car with **99.59% confidence**, but incorrectly identified a teacup as an airplane with **52.78% confidence**.
 
-The model correctly classified a car as an automobile with **99.59% confidence**.
-
-However, it incorrectly classified a teacup as an airplane with **52.78% confidence**.
-
-This contrast demonstrated that confidence scores do not guarantee correctness.
-
-It also highlighted the importance of investigating unexpected predictions and evaluating models on representative examples.
+This highlighted the difference between confidence and correctness and encouraged more cautious interpretation of automated predictions.
 
 ![CNN Car Prediction](assets/CNN%20Car%20and%20Teacup%20Predictions.png)
 
-*Figure 15. CNN classification of a car.*
+*Figure 15. Correct car classification.*
 
 ![CNN Teacup Prediction](assets/CNN%20Car%20and%20Teacup%20Predictions1.png)
 
-*Figure 16. CNN misclassification of a teacup.*
-
-The experience influenced my later medical-image project, where I placed greater emphasis on independent testing and the consequences of classification errors.
+*Figure 16. Incorrect teacup classification.*
 
 ---
 
-# 7. Unit 11 – Individual Pneumonia Detection Project
+# 7. Unit 11 – Individual Pneumonia Project
 
-## Research Question
+The individual project compared HOG features with a Linear Support Vector Machine against a custom CNN using chest X-ray images (Mooney, 2018). The SVM approach builds on maximum-margin classification principles (Cortes and Vapnik, 1995).
 
-The individual project compared two approaches to pneumonia detection using chest X-ray images from a publicly available dataset (Mooney, 2018):
+The methodology included preprocessing, group-aware splitting, cross-validation and independent holdout evaluation involving **1,165 images**.
 
-- Histogram of Oriented Gradients with a Linear Support Vector Machine.
-- A custom Convolutional Neural Network.
-
-The objective was to determine whether the more complex CNN provided a meaningful advantage over a classical machine-learning baseline. The support-vector approach is grounded in the maximum-margin classification framework described by Cortes and Vapnik (1995).
-
-## Dataset and Evaluation
-
-The workflow included data auditing, preprocessing, a group-aware data split, cross-validation, and an independent holdout evaluation.
-
-The holdout contained **1,165 images**.
-
-The project emphasised preventing data leakage and using consistent evaluation procedures.
-
-## Model Performance
-
-| Metric | HOG + Linear SVM | Custom CNN |
+| Metric | HOG–SVM | CNN |
 |---|---:|---:|
-| Accuracy | 94.51% | 91.93% |
-| Sensitivity | 95.17% | 91.17% |
-| F1-score | 96.19% | 94.28% |
-| False Negatives | 41 | 75 |
+| Accuracy | **94.51%** | 91.93% |
+| Sensitivity | **95.17%** | 91.17% |
+| F1-score | **96.19%** | 94.28% |
+| False negatives | **41** | 75 |
 
-The HOG + Linear SVM model performed better on the independent holdout.
-
-Its lower number of false negatives was particularly important because missed pneumonia cases may have serious clinical consequences.
+The classical model outperformed the CNN, demonstrating that architectural complexity does not guarantee stronger generalisation.
 
 ![Pneumonia Performance Comparison](assets/Pneumonia%20Performance%20Comparison%20and%20Confusion%20Matrices.png)
 
-*Figure 17. Comparison of pneumonia classification performance and confusion matrices.*
+*Figure 17. Classification results and confusion matrices.*
 
-## Explainability and Grad-CAM
-
-Grad-CAM visualisations were used to investigate image regions associated with CNN predictions, following the gradient-based localisation approach of Selvaraju et al. (2017).
-
-Some results suggested attention to regions outside the main lung fields.
-
-However, attention heatmaps do not prove the causal basis of a model's decision.
-
-The activity reinforced the importance of interpreting explainability methods cautiously.
+Grad-CAM was used to investigate image regions associated with CNN predictions (Selvaraju et al., 2017). Some heatmaps suggested attention outside the lung fields, although these visualisations cannot establish causality.
 
 ![Grad-CAM Results](assets/Grad-CAM%20Results.png)
 
-*Figure 18. Grad-CAM visual explanations for chest X-ray classification.*
+*Figure 18. Grad-CAM visualisations.*
 
-## Ethical and Professional Considerations
+The principal ethical concerns were false negatives, dataset representativeness, potential shortcut learning and patient safety. Neither experimental model should be considered clinically deployable without further validation and professional oversight.
 
-The project raised several important issues:
+## Evaluation in Relation to Unit 6
 
-- Patient safety and false-negative predictions.
-- Dataset representativeness.
-- Potential shortcut learning.
-- Explainability and uncertainty.
-- External validation.
-- Professional and clinical oversight.
+No separate Unit 6 proposal for the pneumonia project was available in the documented portfolio. Consequently, this comparison evaluates learning progression rather than claiming to assess an original proposal.
 
-The results represent an experimental comparison and do not demonstrate that either model is ready for autonomous clinical use.
+Unit 6 focused on business-oriented regression and clustering, while Unit 11 involved healthcare classification and greater attention to false negatives, explainability and generalisation.
 
----
-
-## Evaluation of the Final Project (Unit 11) in Relation to Unit 6
-
-No separate Unit 6 proposal for the pneumonia project was included in the available portfolio evidence. Therefore, this evaluation compares the documented Unit 6 group-project stage with the completed Unit 11 individual project rather than claiming to assess an unsubmitted proposal.
-
-Unit 6 investigated Airbnb price prediction and supply segmentation, using regression and K-Means to address business questions. The strongest regression result was an R² of 0.623 for tuned XGBoost. Unit 11 shifted to healthcare image classification, comparing HOG–SVM with a custom CNN and placing greater emphasis on false negatives, generalisation and explainability.
-
-On the 1,165-image holdout, HOG–SVM achieved 94.51% accuracy against 91.93% for the CNN, showing that additional complexity did not guarantee better results. Grad-CAM also exposed possible reliance on irrelevant image regions.
-
-Together, these projects demonstrate progression from business-focused model comparison towards risk-aware evaluation. The main development was learning to judge performance against application-specific consequences, not accuracy alone.
+The progression demonstrated that evaluation criteria must reflect the consequences of model errors. In healthcare, predictive performance must be interpreted alongside safety and clinical limitations.
 
 ---
 
 # 8. Unit 11 – Model Performance Measurement
 
-The model-performance exercise explored how changing regularisation parameters affects classification and regression results.
+The performance-measurement activity investigated the influence of regularisation parameters on ROC-AUC and R².
 
-For logistic regression, the activity considered changes in ROC-AUC associated with different values of C.
-
-For ridge regression, it examined the relationship between alpha and R².
-
-This reinforced the importance of evaluating hyperparameter choices empirically and selecting metrics appropriate to the problem.
+Changing logistic-regression parameter C and ridge-regression parameter alpha demonstrated the importance of empirical hyperparameter evaluation.
 
 ![Unit 11 Performance Results](assets/Unit%2011%20Performance%20Results.png)
 
-*Figure 19. Unit 11 model-performance measurement results.*
+*Figure 19. Model-performance experiment.*
 
 ---
 
 # 9. Collaborative Discussions
 
-## Collaborative Discussion 1 – Industry 4.0 and Industry 5.0
+## Discussion 1 – Industry 4.0 and Industry 5.0
 
-The first collaborative discussion explored Industry 4.0 and Industry 5.0 in healthcare, including digital transformation, interconnected systems, resilience, and human oversight.
+This discussion examined digital transformation, healthcare resilience and human oversight. The CrowdStrike disruption illustrated how technological failures can affect essential services.
 
-The CrowdStrike disruption provided an example of how failures in digital infrastructure can affect essential services.
-
-The discussion strengthened my understanding that technological efficiency must be balanced with organisational resilience and professional accountability.
+The main learning outcome was that efficiency must be balanced against resilience, accountability and professional responsibility.
 
 ![Collaborative Discussion 1 Initial](assets/Collaborative%20Discussions%201%20initial.png)
 
-*Figure 20. Initial contribution to Collaborative Discussion 1.*
+*Figure 20. Initial discussion contribution.*
 
 ![Collaborative Discussion 1 Summary](assets/Collaborative%20Discussions%201%20summery.png)
 
-*Figure 21. Summary reflection for Collaborative Discussion 1.*
+*Figure 21. Discussion summary.*
 
-## Collaborative Discussion 2 – AI Writers and Robo-Writers
+## Discussion 2 – AI Writers
 
-The second collaborative discussion examined AI-assisted writing, authorship, misinformation, accountability, and professional standards.
+The second discussion explored generative AI, authorship, misinformation and accountability.
 
-The activity highlighted the importance of transparency and human review when generative AI is used to produce information.
-
-I learned that the fluency of AI-generated text should not be confused with reliability or factual accuracy.
+I recognised that fluent AI-generated writing is not necessarily accurate and requires transparent use and human verification.
 
 ![Collaborative Discussion 2 Initial](assets/Collaborative%20Discussions%202%20initial.png)
 
-*Figure 22. Initial contribution to Collaborative Discussion 2.*
+*Figure 22. Initial discussion contribution.*
 
 ![Collaborative Discussion 2 Summary](assets/Collaborative%20Discussions%202%20summery.png)
 
-*Figure 23. Summary reflection for Collaborative Discussion 2.*
+*Figure 23. Discussion summary.*
 
 ---
 
-# 10. Unit 12 – Future of Machine Learning
+# 10. Unit 12 – Future Machine Learning
 
-The final unit explored emerging machine-learning approaches, including:
+Unit 12 introduced self-supervised learning, Neural Architecture Search, Edge AI and sustainable machine learning.
 
-- Self-supervised learning.
-- Neural Architecture Search.
-- Edge AI.
-- Ethical and sustainable AI development.
-
-Self-supervised learning demonstrated how useful representations may be learned from unlabelled data.
-
-Neural Architecture Search illustrated opportunities for automating model design, while raising concerns about computational requirements.
-
-Edge AI introduced possibilities for low-latency inference and reduced dependence on cloud infrastructure.
-
-The unit reinforced my understanding that future machine-learning systems must be evaluated for privacy, security, sustainability, and responsible deployment.
+These developments offer opportunities for automation and efficient deployment but also create challenges involving privacy, computational cost and responsible governance.
 
 ![Unit 12 Evidence](assets/Unit%2012%20Evidence.png)
 
-*Figure 24. Unit 12 learning evidence.*
+*Figure 24. Unit 12 evidence.*
 
 ---
 
-# 11. Reflective Case Studies
+# 11. Final Critical Reflection
 
-## 11.1 Model Complexity and Generalisation
+This reflection uses the **WHAT, SO WHAT and NOW WHAT** framework developed by Rolfe, Freshwater and Jasper (2001).
 
-### WHAT
+## WHAT – Learning Experiences
 
-The pneumonia project demonstrated that the classical HOG + Linear SVM approach outperformed the custom CNN on the independent holdout.
+At the beginning of the module, I understood machine learning mainly as the process of selecting algorithms, training models and measuring accuracy. I expected technical performance to be the principal indicator of success. However, the practical exercises, collaborative activities and assessments progressively challenged this assumption.
 
-### SO WHAT
+The early Auto-MPG activity demonstrated that missing values and feature relationships must be examined before modelling. Regression exercises showed that statistical association does not automatically establish causation or reliable prediction. The Jaccard and clustering activities introduced another challenge: results depend on how observations are represented and how algorithms define similarity.
 
-This challenged my expectation that deep learning would necessarily provide stronger performance in image classification.
+The gradient-descent experiment was particularly useful because changing a single parameter produced dramatically different outcomes. A learning rate of 0.08 produced a low final cost, whereas 0.10 caused divergence. This demonstrated the practical consequences of hyperparameter selection.
 
-I learned that greater model complexity does not automatically guarantee better generalisation.
+The CNN exercises also exposed a limitation of model confidence. Although the classifier recognised a car correctly, it misclassified a teacup as an airplane. This experience prepared me to question model outputs rather than accept confidence scores without investigation.
 
-### NOW WHAT
+Two assessments were especially influential: the Unit 6 Airbnb group project and the Unit 11 individual pneumonia classification project. Together, they provided contrasting business and healthcare contexts in which to apply and evaluate machine-learning techniques.
 
-In future projects, I will establish transparent baseline models before introducing more complex approaches and compare them using consistent evaluation procedures.
+## SO WHAT – Critical Analysis
 
----
+The Airbnb project demonstrated that achieving a relatively strong overall regression result does not mean a model performs equally well for every observation. Tuned XGBoost achieved an R² of 0.623, but prediction errors for expensive listings remained problematic.
 
-## 11.2 Optimisation and Technical Risk
+This made me reconsider the relationship between model metrics and business value. A model may outperform alternatives statistically while still producing recommendations that require caution. Tutor feedback reinforced this point by identifying opportunities to strengthen business interpretation, model justification and critical evaluation.
 
-### WHAT
+My individual contribution involved completing my assigned part of the project and reviewing the complete research report. Reviewing the full document helped me see the importance of consistency between methodology, results and conclusions. However, I also recognised that effective teamwork requires more than completing allocated tasks. Clear communication, documented responsibilities and regular progress reviews are essential for producing an integrated submission.
 
-The gradient-descent experiment demonstrated that an excessively large learning rate caused the optimisation process to diverge.
+My self-evaluation score of 29/35 encouraged me to reflect on how I could contribute more effectively to future virtual teams. In particular, I would benefit from more structured checkpoints and earlier discussion of how individual sections connect to the overall research question.
 
-### SO WHAT
+The pneumonia project challenged a different assumption: that a CNN should necessarily outperform a classical model on an image-classification problem.
 
-This showed that seemingly small configuration decisions can produce substantial technical failures.
+The HOG–SVM achieved 94.51% accuracy compared with 91.93% for the CNN. More importantly, it produced 41 false negatives rather than 75. These findings demonstrated that greater complexity does not guarantee better generalisation and that evaluation should account for the practical consequences of errors.
 
-### NOW WHAT
+In a healthcare application, missing a positive case may have serious implications. Therefore, overall accuracy alone is insufficient. Sensitivity, false negatives, dataset representativeness and independent validation must be considered together.
 
-I will monitor training curves, document hyperparameters, and use reproducible experiment settings.
+Grad-CAM introduced an additional dimension to this analysis. The visualisations suggested that some predictions might be influenced by image regions outside the lungs. However, I learned that visual explanations do not prove the causal basis of predictions. This distinction is important because apparently convincing visualisations may create unwarranted confidence in a model.
 
----
+The collaborative discussions broadened my understanding of professional responsibility. The discussion of Industry 4.0 and Industry 5.0 highlighted resilience and human oversight, while the AI-writing discussion raised questions about transparency, authorship and misinformation.
 
-## 11.3 Business Communication and Teamwork
+These activities helped me recognise that machine-learning professionals are responsible not only for technical development but also for explaining limitations and anticipating possible harm.
 
-### WHAT
+Overall, the module changed my understanding of model quality. I now view successful machine learning as a balance between predictive performance, trustworthy evaluation, interpretability, communication and ethical responsibility.
 
-The Airbnb group project received positive feedback on technical analysis but identified weaknesses in business interpretation and critical evaluation.
+## NOW WHAT – Professional Development
 
-### SO WHAT
+In future projects, I will begin by defining the practical problem and evaluation criteria before selecting algorithms. I will assess dataset quality, identify possible sources of bias or leakage, and establish a transparent baseline before experimenting with more complex methods.
 
-I recognised that technical results have limited value unless they are communicated clearly and connected to practical decisions.
+I will also maintain a reproducible experiment log recording preprocessing choices, data splits, hyperparameters and evaluation results. This will help me explain why a model was selected and support more reliable comparisons.
 
-### NOW WHAT
+For higher-risk applications, particularly healthcare, I will place greater emphasis on sensitivity, subgroup performance, external validation and uncertainty. I will avoid treating experimental accuracy as evidence that a system is ready for real-world deployment.
 
-I will improve stakeholder-focused reporting, explain limitations more explicitly, and establish regular checkpoints in future virtual team projects.
+The Airbnb feedback also identified a professional development priority: communicating technical findings in a way that supports decisions. I intend to improve how I explain business implications, assumptions and limitations to non-technical stakeholders.
 
----
+In future group projects, I will clarify responsibilities earlier, participate in regular progress reviews and document my individual contribution more explicitly. I will also review the complete final submission to check whether its sections form a coherent argument.
 
-# 12. Final Critical Reflection
+My short-term goal is to improve reproducibility and technical documentation. My medium-term goal is to develop stronger skills in explainable AI and model evaluation. My longer-term goal is to apply these practices in responsible professional machine-learning projects.
 
-This reflection follows the **WHAT, SO WHAT and NOW WHAT** framework of Rolfe, Freshwater and Jasper (2001).
-
-## WHAT
-
-At the beginning of the module, I mainly associated machine learning with selecting algorithms and measuring predictive accuracy.
-
-The practical activities gradually changed this understanding.
-
-Exploratory data analysis demonstrated the importance of identifying missing values and examining relationships before modelling.
-
-Regression and clustering activities developed my understanding of assumptions, feature representation, and the limitations of algorithmic outputs.
-
-The gradient-descent experiment demonstrated the importance of hyperparameter selection, while CNN exercises highlighted the difference between confidence and correctness.
-
-The Airbnb group project and pneumonia individual project brought these lessons together in applied business and healthcare settings.
-
-## SO WHAT
-
-The Airbnb project showed that a model with relatively strong overall performance may still have substantial limitations in particular price categories.
-
-Tutor feedback highlighted the importance of connecting technical findings to business value and explaining assumptions and limitations.
-
-The pneumonia project challenged my assumptions about model complexity.
-
-The classical HOG + Linear SVM model performed better than the custom CNN and produced fewer false negatives on the independent holdout.
-
-This was particularly important because the consequences of classification errors depend on the application.
-
-In healthcare, a missed positive case may be more significant than a small improvement in overall accuracy.
-
-Grad-CAM added another dimension to my understanding of uncertainty.
-
-Although the visualisations provided useful insights, they could not establish precisely why a prediction was made.
-
-The collaborative discussions broadened my understanding of digital resilience, ethical responsibility, authorship, and human oversight. The initial and summary posts included in this portfolio provide evidence of engagement, although the screenshots alone do not establish the full extent of peer interaction.
-
-Teamwork also demonstrated the importance of communication and coordination.
-
-I recognised that task allocation should be supported by regular progress reviews, shared documentation, and collective accountability.
-
-These experiences changed my understanding of successful machine learning.
-
-Predictive performance remains important, but it must be interpreted alongside data limitations, explainability, practical value, and professional responsibility.
-
-## NOW WHAT
-
-In future machine-learning projects, I will begin with a clearer evaluation plan that includes dataset auditing, baseline models, appropriate metrics, and independent testing.
-
-I will document preprocessing decisions, data splits, and hyperparameters to improve reproducibility.
-
-For higher-risk applications, I will prioritise subgroup evaluation, external validation, uncertainty reporting, and human oversight.
-
-I also intend to improve my communication of technical findings to non-technical stakeholders by connecting results to decisions and explaining limitations clearly.
-
-In collaborative projects, I will establish regular checkpoints, clarify responsibilities early, and support structured final reviews.
-
-The most important lesson I take from this module is that responsible machine learning requires critical judgement throughout the workflow, not simply selecting the algorithm with the highest reported score.
-
-I will measure progress by keeping a reproducible experiment log, documenting baseline-versus-complex-model comparisons, and reviewing whether project conclusions are justified by the data. For collaborative work, I will record my own responsibilities and decisions so that individual contributions can be evidenced rather than merely described.
+The most significant lesson from this module is that choosing the model with the highest reported score is not enough. Reliable machine learning requires critical judgement throughout the entire process, from defining the problem and preparing data to evaluating results and communicating their consequences.
 
 ---
 
-# 13. Professional Skills Matrix and Personal Development Plan
+# 12. Professional Skills and Development Plan
 
-| Professional Skill | Current Evidence | Development Priority |
+| Skill | Evidence | Development Priority |
 |---|---|---|
-| Data Analysis | Auto-MPG EDA, regression, Airbnb | Improve data auditing and feature validation |
-| Programming | Python, K-Means, SVM, CNN | Strengthen reproducibility and testing |
-| Critical Thinking | Airbnb feedback and pneumonia comparison | Improve evaluation of limitations and uncertainty |
-| Problem Solving | Gradient-descent experiments | Use systematic debugging and experiment tracking |
-| Teamwork | Group project and peer evaluation | Establish regular progress checkpoints |
-| Communication | Discussions and assessment reports | Explain technical findings to stakeholders |
-| Ethical Awareness | CNN ethics and medical imaging | Develop fairness and external-validation skills |
+| Data analysis | Auto-MPG, Airbnb | Data auditing |
+| Programming | Python, SVM, CNN | Reproducibility |
+| Critical evaluation | Pneumonia comparison | External validation |
+| Problem solving | Gradient descent | Experiment tracking |
+| Teamwork | Airbnb project | Progress reviews |
+| Communication | Discussions, feedback | Stakeholder reporting |
+| Ethics | Medical imaging, AI writing | Responsible AI |
 
-## Personal Development Plan
+**Short term:** Improve experiment documentation and reproducibility.
 
-**Short term:** Improve documentation of machine-learning experiments and strengthen evaluation procedures.
+**Medium term:** Develop explainable AI and advanced validation skills.
 
-**Medium term:** Develop advanced skills in explainable AI, model calibration, and subgroup analysis.
-
-**Long term:** Apply responsible machine-learning practices in professional projects, including transparent reporting, reproducibility, and human oversight.
+**Long term:** Apply responsible machine-learning practices in professional projects.
 
 ---
 
 # References
-
-The following sources support the methodological discussion and identify the public datasets. Numerical model results are drawn from the practical and project evidence displayed above.
 
 Breiman, L. (2001) ‘Random forests’, *Machine Learning*, 45(1), pp. 5–32. https://doi.org/10.1023/A:1010933404324
 
