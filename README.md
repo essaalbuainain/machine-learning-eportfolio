@@ -31,8 +31,7 @@ Unit 1 covered supervised and unsupervised methods and the machine-learning life
 
 *Figure 1. Auto-MPG correlation evidence.*
 
-Unit 3 : Correlation Linear and Polynomial Regression Modeling assumptions: Overfitting Unit 4 covered fuel consumption and population-GDP relationships (2001-2021). Association alone cannot be used to establish causation or predictive usefulness.
-
+In Unit 3 we studied correlation, linear regression and polynomial regression. We looked at the assumptions made in modeling and the dangers of overfitting. In Unit 4, we examined fuel consumption and population–GDP relationships from 2001 to 2021, and we learned that statistical association does not imply causation or that it can be used to make predictions.
 
 ![Regression Results](assets/Correlation%20and%20Regression%20Results.jpg)
 
@@ -98,8 +97,7 @@ I finished my part and read through the whole group report for coherence and pre
 
 ## Units 7–8: Neural Networks and Optimisation
 
-Perceptron exercises with weighted inputs, bias, and classification. Gradient descent showed sensitivity to parameters. 100 iterations with 0.08 gave cost 0.004121 while 0.10 diverges to about 5.97 × 1028. Cost reduction with iterations (0.01) from **0.480407** (100) to **0.031985** (500). MovieLens outputted **RMSE 1.0400** and **MAE 0.8358**.
-
+Perceptron exercises looked at weighted inputs, bias and Boolean AND classification. Gradient descent was sensitive to learning rates: 100 iterations at 0.08 resulted in a cost of 0.004121, while 0.10 resulted in divergence to approximately 5.97 × 10²⁸. For learning rate of 0.01, increasing the number of iterations from 100 to 500 decreased the cost from 0.480407 to 0.031985. The RMSE was 1.0400 and the MAE was 0.8358 for MovieLens.
 
 ![Perceptron](assets/Perceptron%20Outputs.png)
 
@@ -119,8 +117,7 @@ Perceptron exercises with weighted inputs, bias, and classification. Gradient de
 
 ## Unit 9: CNN Classification and Ethics
 
-Changing the test image to **`x_test[12]`** the correct prediction was **dog** with **75.13% confidence** as verified by `y_test[12]`. This gave additional evidence rather than just one image. The true class and predicted class were checked at the same index, thus avoiding the misleading comparison we get when different indices are used for the image and label. Correctly classified, confidence < 100%.
-
+Switching the test-image index to x_test[12] resulted in a dog classification with 75.13% confidence, which was verified to be the correct label in y_test[12]. This demonstrated the importance of testing different inputs and ensuring that the predicted and the real labels refer to the same image.
 
 ![Unit 9 Test Image](assets/Unit9-Alternative-Test-Image.png)
 
@@ -319,7 +316,7 @@ Noy, S. and Zhang, W. (2023) ‘Experimental evidence on the productivity effect
 
 Pedregosa, F. et al. (2011) ‘Scikit-learn: Machine learning in Python’, *Journal of Machine Learning Research*, 12, pp. 2825–2830. Available at: https://jmlr.org/papers/v12/pedregosa11a.html (Accessed: 14 October 2026).
 
-Rolfe, G., Freshwater, D. and Jasper, M. (2001) *Critical Reflection for Nursing and the Helping Professions: A User's Guide*. Basingstoke: Palgrave Macmillan.
+Rolfe, G., Freshwater, D. and Jasper, M. (2001) Critical Reflection for Nursing and the Helping Professions: A User's Guide. Basingstoke: Palgrave.
 
 Rousseeuw, P.J. (1987) ‘Silhouettes: A graphical aid to the interpretation and validation of cluster analysis’, *Journal of Computational and Applied Mathematics*, 20, pp. 53–65. https://doi.org/10.1016/0377-0426(87)90125-7
 
