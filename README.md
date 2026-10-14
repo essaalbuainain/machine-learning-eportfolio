@@ -193,6 +193,16 @@ This highlighted the difference between confidence and correctness and encourage
 
 *Figure 16. Incorrect teacup classification.*
 
+
+### CNN Layer Analysis and Critical Reflection
+
+The Unit 10 activity explored how convolutional layers extract visual features and how ReLU introduces non-linearity. Intermediate feature maps illustrated the development of image representations.
+
+The model correctly classified a car with 99.59% confidence but incorrectly classified a teacup as an airplane with 52.78% confidence. This highlighted the limitations of closed-set classification when an input does not belong to the model's known categories.
+
+The activity demonstrated the importance of training-data coverage, cautious interpretation of confidence scores, and out-of-distribution detection in practical applications.
+
+
 ---
 
 # 7. Unit 11 – Individual Pneumonia Project
@@ -260,6 +270,15 @@ The main learning outcome was that efficiency must be balanced against resilienc
 
 *Figure 21. Discussion summary.*
 
+
+### Peer Interaction Evidence
+
+The following screenshot demonstrates my engagement with peers through constructive discussion and critical responses.
+
+![Discussion 1 Peer Reply](assets/Discussion1-Peer-Reply.png)
+*Figure. My response to a peer in Collaborative Discussion 1.*
+
+
 ## Discussion 2 – AI Writers
 
 The second discussion explored generative AI, authorship, misinformation and accountability.
@@ -273,6 +292,15 @@ I recognised that fluent AI-generated writing is not necessarily accurate and re
 ![Collaborative Discussion 2 Summary](assets/Collaborative%20Discussions%202%20summery.png)
 
 *Figure 23. Discussion summary.*
+
+
+### Peer Interaction Evidence
+
+The following screenshot demonstrates my engagement with peers through constructive discussion and critical responses.
+
+![Discussion 2 Peer Reply](assets/Discussion2-Peer-Reply.png)
+*Figure. My response to a peer in Collaborative Discussion 1.*
+
 
 ---
 
