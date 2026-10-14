@@ -24,7 +24,7 @@ This e-Portfolio demonstrates my learning in the Machine Learning module Units 1
 
 ## Units 1–4: Foundations, EDA and Regression
 
-Unit 1 covered supervised and unsupervised methods and the machine-learning life cycle. Exploration of the Unit 2 Auto-MPG data found six missing values for horsepower and negative relationships between fuel economy and vehicle weight, displacement, and cylinders. Missingness and correlation had to be investigated before modeling.
+Unit 1 covered supervised and unsupervised methods and the machine-learning life cycle. Exploration of the Unit 2 Auto-MPG data found six missing values for horsepower and negative relationships between fuel economy and vehicle weight, displacement, and cylinders. These exercises showed that statistical association does not establish causation, or provide secure predictions.
 
 
 ![Auto-MPG Heatmap](assets/Auto-MPG%20Correlation%20Heatmap.jpeg)
@@ -272,17 +272,17 @@ The tutor’s comment was that I could have given a better business interpretati
 
 That feedback made me think again about my contribution. Reviewing a finished report can be useful but intervening earlier could have sorted scope, interpretation or consistency issues before they became part of the final draft. So, I see teamwork as an iterative analytical responsibility, not just assembling finished sections.
 
-The pneumonia project was very surprising to me, because I expected deep learning to outperform classical approaches. HOG-SVM is simpler in design with CNN but HOG-SVM gave better accuracy and sensitivity. The most significant ones were false negatives 41 and 75 for SVM and CNN, respectively. Delayed workup in health care can lead to missed pneumonia diagnosis. The learning should be sensitive to error consequences that were important in the application, not just accuracy.
+The pneumonia project showed that deep learning would not outperform classical methods, which was not what I expected. Despite the simplicity of the HOG–SVM design, it achieved higher accuracy and sensitivity than CNN with fewer false negatives (41 compared with 75). This showed that the complexity of a model does not guaranty better performance and that the impact of missed diagnoses needs to be considered when evaluating healthcare.
 
 I started to mistrust hard evaluation. Leakage Mitigation Holdout and subject grouping derived from filenames were implemented to limit leakage in the project, but these identifiers were not confirmed patient records. Demographic information was unavailable, so fairness assessment was not meaningful. Thus, the holdout performance does not reflect clinical generalizability and equity. Such limits are better stated openly than buried in good results.
 
-Grad-CAM made it harder for me to understand CNN predictions. Some activations were observed outside of lung fields, indicating possible shortcut learning. But an attention map is not proof of causality. Now I view explanations as evidence that supports the necessary tests, rather than as proof of the correct model reasoning [Selvaraju et al., 2017].
+Grad-CAM made it harder for me to understand CNN predictions. Some activations were observed outside of lung fields, indicating possible shortcut learning. But an attention map is not proof of causality. Now I view explanations as evidence that supports the necessary tests, rather than as proof of the correct model reasoning (Selvaraju et al., 2017).
 
 The modeling process was enhanced through collaborative discussions. With the introduction of Industry 4.0/5.0, critical services relying on digital systems pose resilience and control issues. Tensions between productivity, originality and responsibility emerged in the debate on AI-writing. Research suggests the advantages of individual writing but a possible decline in collective diversity (Noy and Zhang, 2023; Doshi and Hauser, 2024). Being professional means checking your outputs, being clear about what they can and can't do and being responsible.
 
 ## NOW WHAT? Development Actions
 
-My short-term goal is to have reproducible experiments. I will document the origins of the dataset, the data cleaning process, the data splits, the random seeds, the baselines, and the hyperparameters. I will keep independent evaluation data as much as possible, and will tune against the final test set only once. The regularization exercise was a reminder of why evidence is needed for parameter choices.
+My short-term goal is to have reproducible experiments. I will document the origins of the dataset, the data cleaning process, the data splits, the random seeds, the baselines, and the hyperparameters. I will set aside a separate test set and will use it only after the model selection and hyperparameter tuning are done with training and validation data. The regularization exercise was a reminder of why evidence is needed for parameter choices.
 
 I will maintain an experiment log for my next project and review it before reporting results to measure improvement. I will create success criteria ahead of time, with at least one baseline, and I will document the results. These actions should improve the auditability of reports.
 
